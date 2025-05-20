@@ -3,6 +3,16 @@
 
 Note: This project is on hiatus. 
 
+#######
+Note 2: The URL of EMNIST dataset is outdated. Correct one:
+url = 'https://biometrics.nist.gov/cs_links/EMNIST/gzip.zip'
+Replace the outdated one in python3.8/site-packages/torchvision/datasets/mnist.py 
+
+Note 3: To regenerate the poetry lock file
+poetry lock --no-cache --regenerate
+poetry install
+#######
+
 **PrivacyRaven** is a privacy testing library for deep learning systems.
 You can use it to determine the susceptibility of a model to different privacy attacks; evaluate privacy preserving machine learning techniques; develop novel privacy metrics and attacks; and repurpose attacks for data provenance and other use cases.
 
