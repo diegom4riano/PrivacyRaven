@@ -1,0 +1,48 @@
+batch_size: 100
+gpus: 0
+hparams:
+  batch_size: 100
+  gpus: 0
+  input_size: 784
+  learning_rate: 0.001
+  max_epochs: 8
+  num_workers: 4
+  rand_split_val: &id001
+  - 55000
+  - 5000
+  targets: 10
+  transform: &id002 !!python/object:torchvision.transforms.transforms.Compose
+    transforms:
+    - !!python/object:torchvision.transforms.transforms.ToTensor {}
+    - !!python/object:torchvision.transforms.transforms.Normalize
+      _backward_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _buffers: !!python/object/apply:collections.OrderedDict
+      - []
+      _forward_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _is_full_backward_hook: null
+      _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _modules: !!python/object/apply:collections.OrderedDict
+      - []
+      _non_persistent_buffers_set: !!set {}
+      _parameters: !!python/object/apply:collections.OrderedDict
+      - []
+      _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      inplace: false
+      mean: !!python/tuple
+      - 0.1307
+      std: !!python/tuple
+      - 0.3081
+      training: true
+input_size: 784
+learning_rate: 0.001
+max_epochs: 8
+num_workers: 4
+rand_split_val: *id001
+targets: 10
+transform: *id002

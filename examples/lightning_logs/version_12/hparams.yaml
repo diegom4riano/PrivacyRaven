@@ -1,0 +1,21 @@
+batch_size: 100
+gpus: 0
+hparams:
+  batch_size: 100
+  gpus: 0
+  input_size: 784
+  learning_rate: 0.001
+  max_epochs: 10
+  num_workers: 4
+  rand_split_val: &id001
+  - 55000
+  - 5000
+  targets: 10
+  transform: null
+input_size: 784
+learning_rate: 0.001
+max_epochs: 10
+num_workers: 4
+rand_split_val: *id001
+targets: 10
+transform: null
